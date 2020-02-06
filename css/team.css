@@ -1,0 +1,306 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html {
+  font-size: 62.5%;
+}
+
+
+
+body{
+    background-color: #213140;
+    
+}
+.container-info{
+    max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+
+}
+h1{
+    font-size: 5rem;
+}
+h2{
+    font-size: 3rem;
+}
+p{
+    font-size: 2rem;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    border-bottom: 2px solid black;
+    padding: 20px 0;
+    justify-content: space-evenly;
+    background-color: #213140;
+    color: white;
+    margin-bottom: 2%;
+    
+    
+    
+  }
+
+
+  header .login-btn:hover {
+    background-color: white;
+    color: black;
+    
+  }
+  header .sign-btn:hover {
+    background-color: white;
+    color: black;
+  }
+
+  header nav {
+    width: 610px;
+    margin-top: 1%;
+  }
+  header nav a {
+    text-decoration: none;
+    color: #000000;
+    margin-left: 10%;
+    font-size: 2rem;
+    color: white;
+  }
+  .sign-btn {
+    display: block;
+    background-color: #213140;
+    margin: 0px 10px 20px;
+    cursor: pointer;
+    width: 200px;
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .login-btn {
+    display: block;
+    background-color: #213140;
+    margin: 0 10px 20px;
+    cursor: pointer;
+    width: 100px;
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 10px;
+    color: white;
+    align-items: center;
+  }
+.team-container{
+    background-color: white;
+    
+}
+
+img{
+   max-width: 50%;
+   /* display: flex;
+   justify-content: center; */
+   margin-left: 22%;
+ 
+}
+
+
+#meet-team{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.team-droom{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5%;
+}
+
+.backend-droom{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5%;
+
+}
+.team-text-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.ui-droom{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    text-align: center;
+    margin-left: -15%;
+    
+}
+
+.react1-droom{
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5%;
+}
+.react2-droom{
+    margin-top: 15%;
+    margin-left: -7%;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding-bottom: 10%;
+}
+
+.react2-droom .team-text-container{
+  display: flex;
+  flex-direction: column;
+}
+
+/* @media (max-width: 500px) {
+  .ui-droom{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%; 
+  }
+}
+@media (max-width: 500px) {
+  .ui-droom .img-container{
+    margin-left: -5%;
+  }
+} */
