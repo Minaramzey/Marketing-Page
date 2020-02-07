@@ -1,0 +1,446 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html {
+  font-size: 62.5%;
+}
+.container-info {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+body {
+  background-color: #213140;
+}
+h1 {
+  font-size: 6rem;
+}
+h2 {
+  font-size: 5rem;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #213140;
+}
+.container-info {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 5rem;
+  font-family: 'Kalam', cursive;
+}
+h2 {
+  font-size: 3rem;
+  font-family: 'Pacifico', cursive;
+}
+p {
+  font-size: 2rem;
+}
+a {
+  text-decoration: none;
+}
+header {
+  width: 100%;
+  display: flex;
+  border-bottom: 2px solid black;
+  padding: 20px 0;
+  justify-content: space-evenly;
+  background-color: #213140;
+  color: white;
+  margin-bottom: 2%;
+}
+header .login-btn:hover {
+  background-color: white;
+  color: black;
+}
+header nav {
+  width: 610px;
+  margin-top: 1%;
+}
+header nav a {
+  text-decoration: none;
+  color: #000000;
+  margin-left: 10%;
+  font-size: 2rem;
+  color: white;
+}
+@media (max-width: 500px) {
+  header nav a {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20%;
+    padding-top: 10%;
+  }
+}
+footer {
+  width: 100%;
+  padding: 5px 0;
+  background-color: #213140;
+  text-align: center;
+  align-items: center;
+}
+footer .sign-btn:hover {
+  background-color: white;
+  color: black;
+}
+footer a {
+  text-align: center;
+  width: 610px;
+  text-decoration: none;
+  color: #201f1f;
+  margin-left: 10%;
+  font-size: 2rem;
+  color: white;
+  justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+   footer nav a {
+    display: none;
+  }
+}
+footer .cta {
+  width: 100%;
+  margin-bottom: 1%;
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  font-size: 2rem;
+  color: white;
+}
+.text-content {
+  width: 50%;
+  padding-right: 1%;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 5%;
+}
+#about-droom {
+  width: 100%;
+  margin-top: 1% 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  color: white;
+  padding-top: 7%;
+  padding-bottom: 7%;
+  background-image: url(/img/bgdesk.jpg);
+  background-repeat: no-repeat;
+  background-position: center ;
+  background-size: cover;
+}
+#about-droom .text-content {
+  align-items: center;
+  font-size: 2rem;
+}
+#about-droom .text-content .btn {
+  display: flex;
+  justify-content: space-evenly;
+}
+#about-droom .text-content .sign-btn:hover {
+  background-color: white;
+  color: black;
+}
+#seeker {
+  width: 100%;
+  padding-bottom: 0%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  font-size: 2rem;
+  color: black;
+  background-color: white;
+}
+@media (max-width: 500px) {
+  #seeker {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0%;
+  }
+}
+#seeker .text-content {
+  margin-top: 15%;
+}
+#seeker .text-content .img-content {
+  width: 52%;
+  align-items: left;
+}
+.home .employer {
+  width: 100%;
+  padding-bottom: 0%;
+  margin-top: 5% 0;
+  display: flex;
+  justify-content: space-around;
+  font-size: 2rem;
+  color: black;
+  background-color: white;
+}
+@media (max-width: 500px) {
+  .home .employer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0%;
+  }
+}
+.home .employer .text-content {
+  margin-top: 15%;
+}
+.home .employer .text-content .img-employer {
+  width: 50%;
+  align-items: left;
+}
+#features {
+  width: 100%;
+  padding-bottom: 0%;
+  border-bottom: 2px solid black;
+  margin: 0px 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row-reverse;
+  font-size: 2rem;
+  color: black;
+  background-color: white;
+}
+@media (max-width: 500px) {
+  #features {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0%;
+  }
+}
+#features .text-content {
+  margin-top: 15%;
+}
+#features .text-content .img-feature {
+  width: 52%;
+  align-items: left;
+}
+.sign-btn {
+  display: block;
+  background-color: #213140;
+  margin: 0px 10px 20px;
+  cursor: pointer;
+  width: 200px;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-btn {
+  display: block;
+  background-color: #213140;
+  margin: 0 10px 20px;
+  cursor: pointer;
+  width: 100px;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: white;
+  align-items: center;
+}
+.team-droom {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.backend-droom {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.team-text-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.ui-droom {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .ui-droom {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0%;
+  }
+}
+.react1-droom {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding-bottom: 5%;
+}
+.react2-droom {
+  margin-top: 15%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 10%;
+}
+@media (max-width: 500px) {
+  .react2-droom {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0%;
+  }
+}
