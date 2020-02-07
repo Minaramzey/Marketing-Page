@@ -1,32 +1,42 @@
-//Header nav
-header {
+ //Header nav
+ header {
     width: 100%;
     display: flex;
     border-bottom: 2px solid black;
     padding: 20px 0;
-	justify-content: space-evenly;
-	background-color: #213140;
-	color: white;
-	margin-bottom: 2%;
+    justify-content: space-evenly;
+    background-color: @bg-color;
+    color: white;
+    margin-bottom: 2%;
+
+  .login-btn:hover {
+        background-color: white;
+        color:black;
+      }  
+    
 
   
     nav { 
       width: 610px;
-	  justify-content: space-evenly;
-	  margin-top: 1%;
-	
-      
-  
-      a {
+    margin-top: 1%;
+    
+    a {
         text-decoration: none;
         color: #000000;
         margin-left: 10%;
-	  font-size: 2rem;
-	  color:white;
+	    font-size: 2rem;
+        color:white;
+        @media @mobile { 
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20%;
+            padding-top: 10%;
+        }
         }//closes a
     }//closes nav
 }// closes header
-
 
 
 

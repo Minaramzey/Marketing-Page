@@ -1,103 +1,231 @@
 .text-content {
-    width: 50%;
-    padding-right: 1%;
-    font-size: 2rem;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-bottom: 5%;
-  }
-
-
-
- #about-droom {
-    width: 100%;
-    border-bottom: 2px solid black;
-    margin-top: 1% 0;
-    display: flex; 
-    flex-direction: column;
-    text-align: center;
-    align-items: center; 
-    font-size: 4rem;
-    color: white;
-    padding-top:7%;
-    padding-bottom: 7%;
-    background-image: url(/img/bgdesk.jpg);
-    background-repeat: no-repeat;
-    background-position: center ;
-    background-size: cover;
-   
-  
-  #about-droom .text-content .btn{
-     display: flex;
-     flex-direction: column;
-      align-items: center;
-  }
+  width: 50%;
+  padding-right: 1%;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 5%;
 }
 
- 
 
+
+
+
+
+#about-droom {
+width: 100%;
+margin-top: 1% 0;
+display: flex;
+flex-direction: column;
+text-align: center;
+align-items: center;
+color: white;
+padding-top: 7%;
+padding-bottom: 7%;
+background-image: url(/img/bgdesk.jpg);
+background-repeat: no-repeat;
+background-position: center ;
+background-size: cover;
   
-  #seeker {
-    width: 100%;
-    padding-bottom: 0%;
-    display: flex; 
-    justify-content: center;
-    flex-direction: row-reverse;
-    font-size: 2rem;
-    color: black;
-    background-color: white;
-    
-    .text-content {
-     margin-top: 15%;
+ .text-content{
+     align-items: center;
+     font-size: 2rem;
+     
+
+     .btn{
+       display: flex;
+       justify-content: space-evenly;
+       
+     }
+
+   .sign-btn:hover {
+      background-color: white;
+      color:black;
+    }  
+ }
+}
+
+
+
+
+#seeker {
+  width: 100%;
+  padding-bottom: 0%;
+  display: flex; 
+  justify-content: center;
+  flex-direction: row-reverse;
+  font-size: 2rem;
+  color: black;
+  background-color: white;
+  @media @mobile { 
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 0%;
+  }
   
-  .img-content  {
+  .text-content {
+   margin-top: 15%;
+   
+
+.img-content  {
+  width: 52%;
+  align-items: left;
+}
+}
+}
+
+.home .employer {
+  width: 100%;
+  padding-bottom: 0%;
+  margin-top: 5% 0;
+  display: flex; 
+  justify-content: space-around;
+  font-size: 2rem;
+  color: black;
+  background-color: white;
+  @media @mobile { 
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 0%;
+  }
+  
+  .text-content {
+      margin-top: 15%;
+  
+.img-employer{
+  width: 50%;
+  align-items: left;
+}
+}
+}
+
+#features {
+  width: 100%;
+  padding-bottom: 0%;
+  border-bottom: 2px solid black;
+  margin: 0px 0;
+  display: flex; 
+  justify-content: space-evenly;
+  flex-direction: row-reverse;
+  font-size: 2rem;
+  color: black;
+  background-color: white;
+  @media @mobile { 
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 0%;
+  }
+  
+  .text-content {
+      margin-top: 15%;
+
+
+.img-feature{
     width: 52%;
     align-items: left;
+    }
   }
- }
+}
+.sign-btn{
+  display: block;
+  background-color: @bg-color;
+  margin: 0px 10px 20px;
+  cursor: pointer;
+  width: 200px;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}//closes sign btn
+
+
+.login-btn{
+display: block;
+background-color: @bg-color;
+margin: 0 10px 20px;
+cursor: pointer;
+width: 100px;
+height: 45px;
+font-size: 2rem;
+border-radius: 10px;
+color: white;
+align-items: center;
+}//closes login btn
+
+///////////////////////////////////////
+//team-page
+.team-droom{
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-around; 
+ text-align: center; 
+text-align: center;
 }
 
-  .home .employer {
-    width: 100%;
-    padding-bottom: 0%;
-    margin-top: 5% 0;
-    display: flex; 
-    justify-content: space-around;
-    font-size: 2rem;
-    color: black;
-    background-color: white;
-    
-    .text-content {
-        margin-top: 15%;
-    
-  .img-employer{
-    width: 50%;
-    align-items: left;
-  }
- }
+.backend-droom{
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-around; 
+ text-align: center; 
+text-align: center;
+
 }
-
-  #features {
-    width: 100%;
-    padding-bottom: 0%;
-    border-bottom: 2px solid black;
-    margin: 0px 0;
-    display: flex; 
-    justify-content: space-evenly;
-    flex-direction: row-reverse;
-    font-size: 2rem;
-    color: black;
-    background-color: white;
-    
-    .text-content {
-        margin-top: 15%;
-
+.team-text-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.ui-droom{
+  display: flex;
+   justify-content: space-around; 
+  text-align: center; 
+ text-align: center;
+}
+@media @mobile {
+.ui-droom {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0%;
   
-  .img-feature{
-      width: 52%;
-      align-items: left;
-  }
- }
+}
 }
 
+.react1-droom{
+margin-top: 5%;
+display: flex;
+justify-content: space-around; 
+text-align: center; 
+text-align: center;
+padding-bottom: 5%;
+}
+.react2-droom{
+  margin-top: 15%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 10%;
+  
+}
+@media @mobile {
+.react2-droom{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0%;
+  
+}
+}
